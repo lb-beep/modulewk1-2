@@ -1,0 +1,63 @@
+﻿@{
+    ViewData["Title"] = "My Gram";
+}
+
+<div id="MainContainerDiv" class="text-center">
+    <h1 id="MyPar" class="display-4">My Gram</h1>
+    <div class="TestClass">
+        <button class="TestButton">Sign Up</button>
+        <button class="TestButton">Login</button>
+    </div>
+    <input type="text" id="TextInput"/>
+
+    <select id="TestSelect">
+        <option>User</option>
+        <option>Password</option>
+    </select>
+
+      <section class="SectionClass">
+
+        <span>
+            image1
+            image2
+            image3
+            image4
+            image5
+        </span>
+
+    </section>
+    <section class="SectionClass">
+        <p>About Blog Jobs Help</p>
+        <p>English 2021 MyGram</p>
+
+    </section>
+</div>
+
+@section Scripts
+{
+    <script>
+
+        function DoSomething() {
+            var newElement = document.createElement("button");
+            $(newElement).text("User");
+            $(newElement).addClass("TestButton");
+
+            $("div#MainContainerDiv").append(newElement);
+        }
+        $("div#MainContainerDiv").on("change", "#TestSelect", function () {
+            DoSomething();
+        });
+        $("div#MainContainerDiv").on("keydown", "#TextInput", function () {
+            DoSomething();
+        });
+        $("div#MainContainerDiv").on("click", ".TestButton", function () {
+            DoSomething();
+        });
+
+        
+
+
+       
+     </script>
+ }
+
