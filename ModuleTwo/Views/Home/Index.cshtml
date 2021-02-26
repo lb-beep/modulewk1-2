@@ -35,29 +35,6 @@
 
 @section Scripts
 {
-    <script>
-
-        function DoSomething() {
-            var newElement = document.createElement("button");
-            $(newElement).text("User");
-            $(newElement).addClass("TestButton");
-
-            $("div#MainContainerDiv").append(newElement);
-        }
-        $("div#MainContainerDiv").on("change", "#TestSelect", function () {
-            DoSomething();
-        });
-        $("div#MainContainerDiv").on("keydown", "#TextInput", function () {
-            DoSomething();
-        });
-        $("div#MainContainerDiv").on("click", ".TestButton", function () {
-            DoSomething();
-        });
-
-        
-
-
-       
-     </script>
- }
+    <script src="~/js/Index.js"></script>
+}
 
